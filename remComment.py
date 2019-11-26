@@ -1,6 +1,6 @@
 #coding=utf-8
-
-# quote:
+# https://www.jianshu.com/p/583535a7069b
+# quote: 去代码中的注释
 
 class rmcmnt :
     ### members
@@ -23,7 +23,7 @@ class rmcmnt :
                 state = 1
             elif state == 1 and c == '*' :      # ex. [/*]
                 state = 2
-            elif state == 1 and c == '/' :      # ex. [#]
+            elif state == 1 and c == '/' :      # ex. [//]
                 state = 4
             elif state == 1 :                   # ex. [<secure/_stdio.h> or 5/3]
                 print('/')
