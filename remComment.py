@@ -1,7 +1,9 @@
 #coding=utf-8
 # https://www.jianshu.com/p/583535a7069b
 # quote: 去代码中的注释
-
+# import remComment  as rc
+# my_rc = rc.rmcmnt('c')
+# c_text,rm = my_rc(c_text_src)
 class rmcmnt :
     ### members
     m_type = 'CPP'
@@ -116,8 +118,8 @@ class rmcmnt :
                 state = 0
 
             # remove "=-1" in "int a = -1;"
-            elif state == 0 and c == '=':     
-                state = 15
+            #elif state == 0 and c == '=':     
+            #    state = 15
             elif state == 15 and c == ';':    
                 state = 0
 
